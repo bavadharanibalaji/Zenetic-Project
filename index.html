@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zenetic</title>
+
+  <!--This is the CSS stylesheet-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--This is the Fontawesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!--This is the Google Font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="navbar">
+
+      <div class="navbar_s1">
+        <h1><i class="fa-solid fa-dna fa-m" style="color: rgb(249, 242, 242);"></i>Zenetic</h1>
+        <p><i>rhythm of your life</i></p>
+      </div>
+
+      <div class="navbar_s2">
+        <p><a href="#about">About Us</a></p>
+        <p><a href="services.html">services</a></p>
+        <p><a href="Specialities.html">Specialities</a></p>
+        <p><a href="package.html">Health Package</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+
+      <div class="navbar_s3">
+        <i class="fa-solid fa-heart-pulse fa-xl" style="color:rgb(249, 242, 242);"></i>
+        <i class="fa-solid fa-phone fa-lg" style="color: rgb(240, 26, 26);"></i>
+        <i class="fa-solid fa-circle-user fa-xl" style="color: rgb(249, 242, 242);"></i>
+
+      </div>
+
+      <div class="navbar_s4">
+        <i class="fa-solid fa-bars fa-lg" style="color: rgb(249, 242, 242);"></i>
+       
+      </div>
+
+    </div>
+
+    <div class="topbar1">
+      <div class="contact-item">
+        <i class="fa-regular fa-circle-dot fa-xl" style="color: rgb(235, 13, 13);"></i>
+        <span class="label">Emergency</span>
+        <p>+44 3000 5001</p>
+      </div>
+
+      <div class="appointment-item">
+
+        <button>
+
+          <a href="appointment.html">
+            <h5>Appointment Booking</h5>
+          </a>
+        </button>
+      </div>
+    </div>
+
+
+
+    <div class="dashboard">
+      <div class="cards">
+
+        <div class="card">
+          <i class="fa-solid fa-heart icon heart" style="color: red;"></i>
+          <div>
+            <p>Heart Rate</p>
+            <h2 id="heartRate">72 bpm</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-droplet icon" style="color: skyblue;"></i>
+          <div>
+            <p>Blood Pressure</p>
+            <h2 id="bp">120/80</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-vial icon" style="color: goldenrod;"></i>
+          <div>
+            <p>Glucose</p>
+            <h2 id="glucose">90 mg/dL</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-flask icon" style="color: orangered;"></i>
+          <div>
+            <p>Blood Count</p>
+            <h2 id="blood">7.5 K/µL</h2>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="main">
+
+        <div class="graph-box">
+          <h3>Heart Rate Performance</h3>
+          <canvas id="heartChart"></canvas>
+        </div>
+
+        <div class="health-ad-card">
+          <div class="ad-tag">PROMOTED</div>
+          <div class="ad-content">
+            <div class="ad-icon">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h4 id="ad-title">Full Body Checkup</h4>
+            <p id="ad-description">Get 20% off on your first comprehensive diagnostic test this month.</p>
+            <button class="ad-btn" onclick="handleAdClick()">Book Now</button>
+          </div>
+        </div>
+
+
+        <div class="tip-box">
+          <h3>Health Tip🎯</h3>
+          <p id="tipText">Drink water and exercise daily💦</p>
+          <button id="tipBtn">Get New Tip</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <div class="glass-circle">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="sub-heading">Who We Are</span>
+          <h2>Advancing the <br><span>Future of Medicine</span></h2>
+          <p>
+            At Zenetic, we bridge the gap between advanced technology and compassionate care.
+            Our mission is to provide precision diagnostics and personalized treatment plans
+            that harmonize with your life's unique rhythm.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <i class="fa-solid fa-microscope"></i>
+              <div>
+                <h4>Precision Lab</h4>
+                <p>High-accuracy DNA and blood analysis.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-shield-heart"></i>
+              <div>
+                <h4>Safety First</h4>
+                <p>Certified protocols for patient safety.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="about-btn"><a href="appointment.html">Appointment now</a> <i
+              class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="specialities-section">
+        <div class="heading-container">
+            <h1 class="main-heading">Our Specialities & Doctors</h1>
+        </div>
+
+        <div class="content-wrapper">
+
+            <div class="image-box">
+                <img src="./images/hbg.jpg" alt="Specialities Image" class="speciality-img">
+            </div>
+
+            <div class="text-box">
+                <p class="description">
+                    Our hospital offers a wide range of medical specialties, including cardiology, neurology,
+                    orthopedics, pediatrics, dermatology, gynecology, ENT, and general medicine. Our experienced and
+                    dedicated teams are committed to providing comprehensive patient-centered care to meet your unique
+                    health needs.
+                </p>
+
+                <p class="description">
+                    Each specialty is supported by a team of experienced professionals who work together to ensure
+                    accurate diagnosis and effective treatment for every patient.
+                </p>
+
+                <a href="./Specialities.html">
+                    <button class="btn-explore">
+                        Explore More
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="sale">
+      <div class="sale-img">
+        <img src="./images/d4.jpg" alt="trip img">
+      </div>
+      <div class="sale-content">
+        <h1>Limited Time Health Packages</h1>
+        <p>Affortable preventive care plans for complete body</p>
+        <button><a href="">Explore Package</a></button>
+      </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+
+      <div class="footer-container">
+
+        <div class="footer-section">
+          <h3>Zenetic</h3>
+          <p>24/7 Emergency services with expert doctors.</p>
+          <h4>Contact Us</h4>
+          <p>📍 Chennai, India</p>
+          <p>📞 +91 98765 43210</p>
+          <p>✉️info@careplus.com</p>
+        </div>
+      </div>
+
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Doctors</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html">Appointments</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-section">
+        <h4>Working Hours</h4>
+        <p>Mon - Sat: 8:00 AM - 10:00 PM</p>
+        <p>Sunday: Emergency Only</p>
+      </div>
+
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><br>
+          <a href="#"><i class="fab fa-twitter"></i>Twitter</a><br>
+          <a href="#"><i class="fab fa-instagram"></i>Instagram</a><br>
+          <a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a><br>
+        </div>
+      </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 CarePlus Hospital | Designed for healthcare services</p>
+  </footer>
+
+  <script src="script.js"></script>
+ 
+</body>
+
+</html>

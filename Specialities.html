@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialities & Doctors</title>
+
+     <!--This is the CSS stylesheet-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--This is the Fontawesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!--This is the Google Font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="navbar_s1">
+                <h1><i class="fa-solid fa-dna fa-m" style="color: rgb(249, 242, 242);"></i>Zenetic</h1>
+                <p><i>rhythm of your life</i></p>
+            </div>
+
+            <div class="navbar_s2">
+                <p><a href="index.html">About Us</a></p>
+                <p><a href="services.html">services</a></p>
+                <p><a href="Specialities.html">Specialities</a></p>
+                <p><a href="package.html">Health Package</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+            </div>
+
+            <div class="navbar_s3">
+                <i class="fa-solid fa-heart-pulse fa-xl" style="color:rgb(249, 242, 242);"></i>
+                <i class="fa-solid fa-phone fa-lg" style="color: rgb(240, 26, 26);"></i>
+                <a href="#"><i class="fa-solid fa-circle-user fa-xl" style="color: rgb(249, 242, 242);"></i></a>
+
+            </div>
+
+            <div class="navbar_s4">
+                <div><i class="fa-solid fa-bars fa-lg" style="color: rgb(249, 242, 242);"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="topbar1" style="background-color: rgb(204, 193, 193);">
+            <div class="contact-item">
+                <i class="fa-regular fa-circle-dot fa-xl" style="color: rgb(235, 13, 13);"></i>
+                <span class="label">Emergency</span>
+                <p>+44 3000 5001</p>
+            </div>
+
+            <div class="appointment-item">
+
+                <button>
+
+                    <a href="appointment.html">
+                        <h5>Appointment Booking</h5>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+
+        <section class="header-section">
+        <h1 class="page-title">Specialities & Doctors</h1>
+        <input type="text" id="searchInput" placeholder="Search for doctors..." class="search-bar">
+    </section>
+
+    <section class="intro-section">
+        <h1 class="section-heading">We Provide a Wide Range of Medical Services</h1>
+        <p class="section-subtext">Our experienced and dedicated teams are committed to providing comprehensive patient-centered care to meet your unique health needs.</p>
+    </section>
+
+    <section class="grid-container">
+        <div id="cardsContainer" class="cards-grid">
+
+            <div class="doctor-card">
+                <h2 class="card-title">Cardiology</h2>
+                <p class="doctor-names">Dr. John Doe, Dr. Jane Smith</p>
+                <p class="card-desc">Heart and cardiovascular system treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h2 class="card-title">Neurology</h2>
+                <p class="doctor-names">Dr. Rajesh Patel, Dr. Selvanantham</p>
+                <p class="card-desc">Brain and nervous system treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h2 class="card-title">Orthopedics</h2>
+                <p class="doctor-names">Dr. Raghuram, Dr. Anu Ratan</p>
+                <p class="card-desc">Bone and joint treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h2 class="card-title">Pediatrics</h2>
+                <p class="doctor-names">Dr. Rajaram, Dr. Ratan Tata</p>
+                <p class="card-desc">Child and infant treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h2 class="card-title">Dermatology</h2>
+                <p class="doctor-names">Dr. Rajalakshmi, Dr. Vallinayagam</p>
+                <p class="card-desc">Skin condition treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h2 class="card-title">Gynecology</h2>
+                <p class="doctor-names">Dr. Sindhu, Dr. Radha</p>
+                <p class="card-desc">Women's Treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h2 class="card-title">ENT</h2>
+                <p class="doctor-names">Dr. Suchithra, Dr. Poojitha</p>
+                <p class="card-desc">Ear, Nose and Throat treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h2 class="card-title">General Medicine</h2>
+                <p class="doctor-names">Dr. Gokul, Dr. Bharathi</p>
+                <p class="card-desc">General health and wellness treatment</p>
+                <button onclick="openModal()" class="btn-book">Book Appointment</button>
+            </div>
+
+
+            
+            </div>
+    </section>
+
+    <div id="modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span onclick="closeModal()" class="close-btn">×</span>
+            <h2 class="modal-title">Book Appointment</h2>
+
+            <input id="name" type="text" placeholder="Enter Name" class="modal-input">
+            <p class="error-msg hidden" id="nameError">Invalid Name</p>
+
+            <input id="phone" type="text" placeholder="Phone Number" class="modal-input">
+            <p class="error-msg hidden" id="phoneError">Invalid Phone Number</p>
+
+            <input id="email" type="email" placeholder="Email ID" class="modal-input">
+            <p class="error-msg hidden" id="emailError">Invalid Email ID</p>
+
+           
+            <button onclick="submitForm()" class="btn-submit">Submit</button>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <h1 class="section-heading">About Our Specialities</h1>
+        <p class="about-text">Our hospital offers a wide range of medical specialties...</p>
+        <p class="about-text">Each specialty is supported by a team of experienced professionals...</p>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

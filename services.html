@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <!--This is the CSS stylesheet-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--This is the Fontawesome cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!--This is the Google Font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="navbar">
+
+      <div class="navbar_s1">
+        <h1><i class="fa-solid fa-dna fa-m" style="color: rgb(249, 242, 242);"></i>Zenetic</h1>
+        <p><i>rhythm of your life</i></p>
+      </div>
+
+      <div class="navbar_s2">
+        <p><a href="index.html">About Us</a></p>
+        <p><a href="services.html">services</a></p>
+        <p><a href="Specialities.html">Specialities</a></p>
+        <p><a href="contact.html">Contact Us</a></p>
+      </div>
+
+      <div class="navbar_s3">
+        <i class="fa-solid fa-heart-pulse fa-xl" style="color:rgb(249, 242, 242);"></i>
+        <i class="fa-solid fa-phone fa-lg" style="color: rgb(240, 26, 26);"></i>
+        <i class="fa-solid fa-circle-user fa-xl" style="color: rgb(249, 242, 242);"></i>
+
+      </div>
+
+      <div class="navbar_s4">
+        <div><i class="fa-solid fa-bars fa-lg" style="color: rgb(249, 242, 242);"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="topbar1">
+      <div class="contact-item">
+        <i class="fa-regular fa-circle-dot fa-xl" style="color: rgb(235, 13, 13);"></i>
+        <span class="label">Emergency</span>
+        <p>+44 3000 5001</p>
+      </div>
+
+      <div class="appointment-item">
+
+        <button>
+
+          <a href="appointment.html">
+            <h5>Appointment Booking</h5>
+          </a>
+        </button>
+      </div>
+    </div>
+
+
+    <section class="banner">
+      <h1>Our Medical Services</h1>
+      <p>Expert care across multiple specialties for your health and well-being.</p>
+      <button><a href="appointment.html">Appointment Now</a></button>
+    </section>
+
+   
+    <div class="section">
+      <input id="search" placeholder="Search services..." onkeyup="searchService()">
+    </div>
+
+
+    <section class="services">
+
+      <div class="card">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <h3>Cardiology</h3>
+        <button onclick="openModal('Cardiology')">Book</button>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-brain"></i>
+        <h3>Neurology</h3>
+        <button onclick="openModal('Neurology')">Book</button>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-droplet"></i>
+        <h3>Nephrology</h3>
+        <button onclick="openModal('Nephrology')">Book</button>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-user-doctor"></i>
+        <h3>Dermatology</h3>
+        <button onclick="openModal('Dermatology')">Book</button>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-tooth"></i>
+        <h3>Dental</h3>
+        <button onclick="openModal('Dental')">Book</button>
+      </div>
+
+    </section>
+
+  
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h3 id="serviceName"></h3>
+        <input placeholder="Enter your name">
+        <input type="date">
+        <br><br>
+        <button onclick="confirmBooking()">Confirm</button>
+        <button onclick="closeModal()">Close</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+
+      <div class="footer-container">
+
+        <div class="footer-section">
+          <h3>Zenetic</h3>
+          <p>24/7 Emergency services with expert doctors.</p>
+          <h4>Contact Us</h4>
+          <p>📍 Chennai, India</p>
+          <p>📞 +91 98765 43210</p>
+          <p>✉️info@careplus.com</p>
+        </div>
+      </div>
+
+
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Doctors</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="appointment.html">Appointments</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-section">
+        <h4>Working Hours</h4>
+        <p>Mon - Sat: 8:00 AM - 10:00 PM</p>
+        <p>Sunday: Emergency Only</p>
+      </div>
+
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><br>
+          <a href="#"><i class="fab fa-twitter"></i>Twitter</a><br>
+          <a href="#"><i class="fab fa-instagram"></i>Instagram</a><br>
+          <a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a><br>
+        </div>
+      </div>
+
+  </div>
+
+  <p class="footer-bottom">© 2026 CarePlus Hospital | Designed for healthcare services</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

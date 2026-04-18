@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+
+
+    <!--This is the CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--This is the Fontawesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--This is the Google Font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="navbar_s1">
+                <h1><i class="fa-solid fa-dna fa-m" style="color: rgb(249, 242, 242);"></i>Zenetic</h1>
+                <p><i>rhythm of your life</i></p>
+            </div>
+
+            <div class="navbar_s2">
+                <p><a href="index.html">About Us</a></p>
+                <p><a href="services.html">services</a></p>
+                <p><a href="Specialities.html">Specialities</a></p>
+                <p><a href="package.html">Health Package</a></p>
+                <p><a href="contact.html">Contact Us</a></p>
+            </div>
+
+            <div class="navbar_s3">
+                <i class="fa-solid fa-heart-pulse fa-xl" style="color:rgb(249, 242, 242);"></i>
+                <i class="fa-solid fa-phone fa-lg" style="color: rgb(240, 26, 26);"></i>
+                <a href="#"><i class="fa-solid fa-circle-user fa-xl" style="color: rgb(249, 242, 242);"></i></a>
+
+            </div>
+
+            <div class="navbar_s4">
+                <div><i class="fa-solid fa-bars fa-lg" style="color: rgb(249, 242, 242);"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="topbar1" style="background-color: rgb(204, 193, 193);">
+            <div class="contact-item">
+                <i class="fa-regular fa-circle-dot fa-xl" style="color: rgb(235, 13, 13);"></i>
+                <span class="label">Emergency</span>
+                <p>+44 3000 5001</p>
+            </div>
+
+            <div class="appointment-item">
+
+                <button>
+
+                    <a href="appointment.html">
+                        <h5>Appointment Booking</h5>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h1>Request an Appointment</h1>
+
+            <form id="appointmentForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="speciality">Speciality <span class="required">*</span></label>
+                        <select id="speciality" name="speciality" required>
+                            <option value="" disabled selected>Select Speciality</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="Pulminologist">Pulminologist</option>
+                            <option value="Orthopedic">Orthopedic</option>
+                            <option value="dermatologist">Dermatologist</option>
+
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Appointment Date <span class="required">*</span></label>
+                        <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" required>
+                    </div>
+                    <div class="form-group">
+                    </div>
+                </div>
+
+                <div class="slots-section">
+                    <label>Select Available Slots <span class="required">*</span></label>
+                    <p class="slot-hint">Please select a date to view available slots</p>
+                    <div id="slots-container" class="slots-grid">
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="section-header">
+                    <i class="fa-regular fa-user"></i>
+                    <h2>Personal Information</h2>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="title">Title <span class="required">*</span></label>
+                        <select id="title" name="title" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="ms">Ms.</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">Gender <span class="required">*</span></label>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age <span class="required">*</span></label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Your Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter 10 digit mobile number" required
+                            pattern="[0-9]{10}">
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="address">Your address <span class="required">*</span></label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-section">
+                    <h3>Zenetic</h3>
+                    <p>24/7 Emergency services with expert doctors.</p>
+                    <h4>Contact Us</h4>
+                    <p>📍 Chennai, India</p>
+                    <p>📞 +91 98765 43210</p>
+                    <p>✉️info@careplus.com</p>
+                </div>
+            </div>
+
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Doctors</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="appointment.html">Appointments</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h4>Working Hours</h4>
+                <p>Mon - Sat: 8:00 AM - 10:00 PM</p>
+                <p>Sunday: Emergency Only</p>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a><br>
+                    <a href="#"><i class="fab fa-twitter"></i>Twitter</a><br>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a><br>
+                    <a href="#"><i class="fab fa-linkedin-in"></i>Linkedin</a><br>
+                </div>
+            </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2026 CarePlus Hospital | Designed for healthcare services</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
